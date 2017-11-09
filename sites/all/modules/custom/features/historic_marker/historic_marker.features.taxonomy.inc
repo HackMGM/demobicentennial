@@ -41,5 +41,13 @@ function historic_marker_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'waymark_codes' => array(
+      'name' => 'Waymark Codes',
+      'machine_name' => 'waymark_codes',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
   );
 }
