@@ -34,6 +34,13 @@ function historic_marker_default_services_endpoint() {
     ),
   );
   $endpoint->resources = array(
+    'markersjson' => array(
+      'operations' => array(
+        'index' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
     'node' => array(
       'operations' => array(
         'retrieve' => array(

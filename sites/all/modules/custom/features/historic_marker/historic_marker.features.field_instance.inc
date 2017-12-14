@@ -339,7 +339,7 @@ function historic_marker_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -396,8 +396,52 @@ function historic_marker_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-historic_marker-field_waymark'.
+  $field_instances['node-historic_marker-field_waymark'] = array(
+    'bundle' => 'historic_marker',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A symbol or signpost marking the route of a footpath
+',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_waymark',
+    'label' => 'Waymark',
+    'required' => 1,
+    'settings' => array(
+      'quiz_result' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 11,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('A symbol or signpost marking the route of a footpath
+');
   t('Body');
   t('City');
   t('Coordinates');
@@ -414,6 +458,7 @@ function historic_marker_field_default_field_instances() {
   t('Select the county that the marker is located in.');
   t('Select the highway or nearest highway that the marker is located on.');
   t('Upload images of the marker.');
+  t('Waymark');
 
   return $field_instances;
 }
